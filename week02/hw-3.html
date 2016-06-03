@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<link rel=stylesheet href=hw-3.css />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<title>Application form</title>
+</head>
+<body>
+<header>
+	<a href="/" role="button" class="top btn">&larr; GO BACK</a>
+	<img src="logo">
+	<a href="/" role="button" class="top btn"><i class="fa fa-user" aria-hidden="true"></i> SIGN IN</a>
+</header>
+<main>
+	<form>
+		<section class="top-order-contacts">
+			<div class="your-order">
+				<h2><i class="fa fa-file" aria-hidden="true"></i> YOUR ORDER</h2>
+				<table>
+					<tr>
+						<th>ITEMS</th>
+						<th>DETAILS</th>
+						<th>PRICE</th>
+						<th>DELIVERY</th>
+					</tr>
+					<tr>
+						<td>2 documents</td>
+						<td>2 languages</td>
+						<td><data value=USD:695.05>&#36; 695.05</data></td>
+						<td>48 hours*</td>
+					</tr>
+				</table>
+			</div>
+			<fieldset class="top-center-button">
+				<button class="btn order">PLACE ORDER</button>
+				<button class="btn print">PRINT A QUOTE</button>
+			</fieldset>
+			<div class="help-center">		
+				<h2><i class="fa fa-life-ring" aria-hidden="true"></i> HELP CENTER</h2>
+				<p>If you need assistence while placing tour order, contact one of our beloved Project Manager bo phone or email.</p>
+				<address class="manager-help"><b><a href="tel:+971(0)555 555">+971(0)555 555</a> &emsp; help@qtest.com</b></address>
+			</div>
+		</section>
+		<section class="choose-type">
+			<h1>SELECT WHAT YOU WANT TO TRANSLATE</h1>
+			<ul>
+				<li>
+					<input type="radio" name="type-of-doc" id="website">
+					<label for="website"><i class="fa fa-cloud fa-5x" aria-hidden="true"></i><br>Website</label>
+				</li>
+				<li>
+					<input type="radio" name="type-of-doc" id="document">
+					<label for="document"><i class="fa fa-file-text fa-5x" aria-hidden="true"></i><br>Documents</label>
+				</li>
+				<li>
+					<input type="radio" name="type-of-doc" id="social-account">
+					<label for="social-account"><i class="fa fa-users  fa-5x" aria-hidden="true"></i><br>Social Account</label>
+				</li>
+			</ul>
+		</section>
+		<section class="form-steps upload">
+			<h2><div class="stage">1</div>&emsp; Upload your documents <small>(Doc, Docx, Text, PGF, Markdown)</small></h2>
+			<button class="btn"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload a new file</button>
+			<table class="upload-files">
+				<tr>
+					<td>FILE NAME</td>
+					<td>FILE SIZE</td>
+					<td>NUMBER OF WORDS</td>
+					<td>REMOVE</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-file-text" aria-hidden="true"></i> name.doc</td>
+					<td>78kb</td>
+					<td>842</td>
+					<td><button><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-file-text" aria-hidden="true"></i> name2.doc</td>
+					<td>26kb</td>
+					<td>2.358</td>
+					<td><button><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+				</tr>
+			</table>
+		</section>
+		<section class="form-steps language">
+			<h2><div class="stage">2</div>&emsp; Choose your language pairings</h2>
+			<small>FROM</small>
+			<form>
+				<select size="1" class="choose-language">
+					<option value="English">English</option>
+					<option value="Ukraine">Ukraine</option>
+					<option value="Arabic">Arabic</option>
+					<option value="German">German</option>
+				</select>
+			</form>
+			<br><br>
+			<small>TO</small>
+			<form>
+				<select size="1" class="choose-language">
+					<option value="English">English</option>
+					<option value="Ukraine">Ukraine</option>
+					<option value="Arabic">Arabic</option>
+					<option value="German">German</option>
+				</select>
+			</form>
+			<form>
+				<select size="1" class="choose-language">
+					<option value="English">English</option>
+					<option value="Ukraine">Ukraine</option>
+					<option value="Arabic">Arabic</option>
+					<option value="German">German</option>
+				</select>
+			</form>			
+			<button class="btn" id="add">+ Add</button>
+		</section>
+		<section class="form-steps tone">
+			<h2><div class="stage">3</div>&emsp; Select your desired tone</h2>
+			<ul class="list-desired-tone">
+				<li>
+					<input type="radio" name="desired" id="friendly">
+					<label for="friendly" class="desired-tone"><i class="fa fa-comments" aria-hidden="true"></i> Friendly / Casual</label>
+				</li>
+				<li>
+					<input type="radio" name="desired" id="corporate">
+					<label for="corporate" class="desired-tone"><i class="fa fa-suitcase" aria-hidden="true"></i> Corporate / Pro</label>
+				</li>
+				<li>
+					<input type="radio" name="desired" id="media">
+					<label for="media" class="desired-tone"><i class="fa fa-television" aria-hidden="true"></i> Media/ Formal</label>
+				</li>
+			</ul>
+		</section>
+		<section class="form-steps urgent">
+			<h2><div class="stage">4</div>&emsp;Tell us how urgent this job is</h2>
+			<input type="range" name="timeline" min="1" max="3" step="1" value="AVERAGE">
+			<div class="range-steps">
+				<span>I GOT TIME</span>
+				<span>AVERAGE</span>
+				<span>YESTERDAY</span>
+			</div>
+			<div class="urgent-info">
+				<h2><i class="fa fa-info-circle" aria-hidden="true"></i> Timeline info</h2>
+				<p>With an <strong>Avarage</strong> timeline set up, our expect translator can take a reseonable amount of time perfecting your translation.</p>
+			</div>
+		</section>
+		<section class="form-steps payment">
+			<h2><div class="stage">5</div>&emsp; Sign up and chose a payment method</h2>
+			<small>Alredy have an account whith us? <a href="">Sign in</a></small>
+			<p>FULL NAME</p>
+			<input type="text" class="input-field" id="full-name" pattern="^([a-zA-Z]+[,.]?[ ]?|[a-zA-Z]+['-]?)+$" placeholder="enter your name">
+			<p>EMAIL ADRESS</p>
+			<input type="email" class="input-field" id="email" placeholder="exapmle@mail.com">
+			<p>CHOOSE A PASSWORD</p>
+			<input type="password" class="input-field" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+			<ul class="list-payment">
+			<li>
+				<input type="radio" name="payment" id="visa-card">
+				<label for="visa-card" class="payment-type"><i class="fa fa-cc-visa fa-3x" aria-hidden="true"></i> <i class="fa fa-cc-mastercard fa-3x" aria-hidden="true"></i><br>Visa Cards</label>
+			</li>
+			<li>
+				<input type="radio" name="payment" id="paypal">
+				<label for="paypal" class="payment-type"><i class="fa fa-paypal fa-3x" aria-hidden="true"></i><br>PayPal</label>
+			</li>
+			<li>
+				<input type="radio" name="payment" id="amazone">
+				<label for="amazone" class="payment-type"><i class="fa fa-amazon fa-3x" aria-hidden="true"></i><br>amazone.com</label>
+			</li>
+			</ul>
+			<div class="payment-card">
+				<div class="card-info">
+					<p>CARD NUMBER</p>
+					<input type="text" class="input-field" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35\d{3})\d{11})$" maxlength="16" placeholder="**** **** **** ****">
+				</div>
+				<div class="card-info">
+					<p>EXPIRY DATE</p>
+					<input type="datatime" class="input-field" placeholder="DD / MM / YYYY" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}">
+				</div>
+				<div class="card-info">
+					<p>CODE</p>
+					<input type="password" class="input-field" maxlength="3" placeholder="CVV" pattern="^[0-9]{3,4}$">
+				</div>
+			</div>
+		</section>
+		<section class="form-steps agree">
+			<input type="checkbox" id="agreeTerms" required>
+        	<label for="agreeTerms" class="agree-terms">I agree to the <a href="/">Terms &amp; Conditions</a></label>
+			<button class="btn order">PLACE ORDER</button>
+			<button class="btn print">PRINT A QUOTE</button>
+		</section>
+	</form>
+</main>
+<footer>
+	<ul>
+		<li><h3><i class="fa fa-heart-o" aria-hidden="true"></i> WHAT WE DO</h3>
+			<p><i>We provide a full range of language services including content development, document, website and social media accountstranslations.</i></p>
+		</li>
+		<li><h3><i class="fa fa-eye" aria-hidden="true"></i> OUR MAIN OFFICE</h3>
+			<address>
+				<p>Dubai, UAE</p>
+				<p>P.O. Box: 502735</p>
+				<p>Phone: <a href="tel:+971(0)44278128">+971(0)44278128</a></p>
+			</address>
+		</li>
+		<li><h3><i class="fa fa-share-alt" aria-hidden="true"></i> CONNECT WITH US</h3>
+			<p><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></p>
+			<p><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a></p>
+			<p><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a></p>
+		</li>
+	</ul>
+</footer>
+</body>
+</html>
