@@ -1,0 +1,20 @@
+{
+  "name": "my-kata",
+  "version": "1.0.0",
+  "main": "./add.js",
+  "scripts": {
+    "test": "mocha -w ./test"
+  },
+  "dependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon": "*"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
